@@ -46,7 +46,7 @@
 }
 
 
-- (void)showInViewController:(MXKViewController *)mxkViewController toExportKeysToFile:(NSURL *)keyFile onComplete:(void (^)(BOOL success))onComplete
+- (void)showInViewController:(UIViewController<MXKViewControllerHandling> *)mxkViewController toExportKeysToFile:(NSURL *)keyFile onComplete:(void (^)(BOOL success))onComplete
 {
     __weak typeof(self) weakSelf = self;
 
